@@ -52,7 +52,7 @@ public class AuthServer {
     // }
     // LOGGER.info("----------------------------ASCII---------------------------");
     // System.out.println(context.getBean("mongoDatastore"));
-    // localTestOnly(context);
+    localTestOnly(context);
 
     if (args.length > 0 && "init".equalsIgnoreCase(args[0]))
     {
