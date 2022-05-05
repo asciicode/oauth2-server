@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>nz.co.logicons.tlp</groupId>
+		<artifactId>tlp-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../tlp-parent/pom.xml</relativePath>
+	</parent>
+
+	<artifactId>oauth2-server</artifactId>
+	<name>TLP OAuth2 Server</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>nz.co.logicons.tlp</groupId>
+			<artifactId>core-base</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-oauth2</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+<!-- 		<dependency> -->
+<!-- 		    <groupId>org.springframework.security.oauth.boot</groupId> -->
+<!-- 		    <artifactId>spring-security-oauth2-autoconfigure</artifactId> -->
+<!-- 		    <version>2.1.9.RELEASE</version> -->
+<!-- 		</dependency> -->
+
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.springframework.security</groupId> -->
+<!-- 			<artifactId>spring-security-jwt</artifactId> -->
+<!-- 		</dependency> -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${commons.lang.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-validator</groupId>
+			<artifactId>commons-validator</artifactId>
+			<version>${commons.validator.version}</version>
+		</dependency>
+	</dependencies>
+</project>
